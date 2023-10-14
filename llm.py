@@ -40,19 +40,10 @@ chain = ConversationalRetrievalChain.from_llm(
 )
 
 chat_history = []
-print("""Welcome to Sentinel Vision - a platform which equips professionals with precise, actionable data tailored to their specific requirements.
-
-Built using OpenAI's GPT-4 with Browsing + ChromaDB Vector Embeddings using LLAMA and Langchain.
-
-Uses:
-1. Real-time analytics for satellite tracking, space weather, and conjunction assess.
-2. Customizable alerts and reports based on individual satellite or mission parameters.
-3. Analysis and suggestions of NASA Standards & Technical Bulletins
- 
-""")
+print("""OpenAI Custom LLM""")
 while True:
   if not query:
-    query = input("Please enter your space-related query: ")
+    query = input("Please enter your query: ")
   if query in ['quit', 'q', 'exit']:
     sys.exit()
   result = chain({"question": query, "chat_history": chat_history})
