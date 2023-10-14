@@ -9,6 +9,8 @@ config = dotenv_values('.env')  # Load .env file
 openai_api_key = config['OPENAI_API_KEY']
 discord_token = config['DISCORD_TOKEN']
 
+
+
 async def send_message(message, user_message, is_private):
     try:
         response = responses.get_response(user_message, message, is_private)

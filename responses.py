@@ -21,12 +21,18 @@ flowFlow = False
 import requests
 
 from dotenv import dotenv_values
+import os
+from twilio.rest import Client
+
 
 config = dotenv_values(".env")  # Load .env file
 
 # Access the API keys
 openai_api_key = config["OPENAI_API_KEY"]
 discord_token = config["DISCORD_TOKEN"]
+account_sid = config['TWILIO_ACCOUNT_SID']
+auth_token = config['TWILIO_AUTH_TOKEN']
+client = Client(account_sid, auth_token)
 
 # Use the API keys in your code
 print(openai_api_key)
@@ -476,9 +482,8 @@ def minting(name, description, image_url, chain) -> str:
 
 welcome_message = """Hi - welcome to FaceConnect! How can I help?
         
-Type "!help" for additional instructions.
-Type "register" to get started!
-Type "connect" to connect with anyone with an image of their face!
+Type "Register" to get started!
+Type "Connect" to connect with anyone with an image of their face!
 """
 
 
@@ -522,7 +527,7 @@ def get_response(message_string: str, message: any, is_private: any) -> str:
         registerFlow = True
         return """Let's get you registered! Please upload an image of yourself.
         
-If you wish, you can type your preferred alias in the same message that you attach your image. 
+If you wish, you can type your preferred phone number in the same message that you attach your image. 
 
 If not, your Discord username will be set as your alias."""
 
@@ -582,12 +587,12 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
     if p_message == "connect":
         connectFlow = True
         print(username_to_encoding)
-        return "Let's get you connected! Please upload an image of the person you want to contact."
+        return f"Let's get you connected! Please upload an image of the person you want to contact. \n\n In the same message, please write the message you want to send to them!"
 
     if p_message == "transaction" or p_message == "hedera":
         hederaFlow = True
         print(username_to_encoding)
-        return "Please upload an image of the person you want to send a transaction to!"
+        return f"Please upload an image of the person you want to send a transaction to!"
 
     if connectFlow or hederaFlow or p_message == "":
         print(message)
@@ -619,6 +624,19 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
 
                 print("Name: ", recipient)
                 print("The index of the first True element is:", index)
+
+                if (recipient == "William Wang"):
+                    recipient = "4168807375"
+
+                if (recipient[0] == '4'):
+                    message = client.messages \
+                    .create(
+                        body=f"Hi there, {message.author} wants to reach out to you! \n Their Discord username is {message.author}. \n Their message for you is: {message_string}",
+                        from_='+12295750071',
+                        to=f'+1{recipient}'
+                    )
+
+                    print(message.sid)
 
                 return f"""Face Recognition Successful! 
                 
