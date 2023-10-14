@@ -14,13 +14,13 @@ Additionally, FaceConnect also includes a transaction feature that allows users 
 
 ## Demos
 
-Mobile Registration and Connection Flow:
+Mobile Registration and Connection Flow (Registering and Detecting my own face!):
 
 
 https://github.com/WilliamUW/HackTheValley/assets/25058545/eb8501ad-1c4c-4795-a1a4-91ff7385d281
 
 
-Desktop Flow:
+Desktop Connection Flow (Obama + Trump + Me as examples):
 
 
 ## How I built it
