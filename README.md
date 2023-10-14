@@ -4,7 +4,7 @@
 
 ## Inspiration
 
-The inspiration for FaceConnect came from a common problem many of us have experienced - the difficulty of staying in touch with people we meet at various events, whether it's a hackathon, a party, or a networking event. It's frustrating when we hit it off with someone, but either forget to exchange contact information or struggle to remember who they are later on. FaceConnect was born out of a desire to solve this problem by using facial recognition technology to connect people through their photos.
+The inspiration for FaceConnect came from a common problem many of us have experienced - the difficulty of staying in touch with people I meet at various events, whether it's a hackathon, a party, or a networking event. It's frustrating when I hit it off with someone, but either forget to exchange contact information or struggle to remember who they are later on. FaceConnect was born out of a desire to solve this problem by using facial recognition technology to connect people through their photos!
 
 ## What it does
 
@@ -12,15 +12,15 @@ FaceConnect is a Discord bot designed to help you reconnect with people using fa
 
 Additionally, FaceConnect also includes a transaction feature that allows users to send transactions based on facial recognition. If you owe your friend money and have their face in your database, you can simply use the "transaction" command to complete the payment.
 
-## How we built it
+## How I built it
 
 FaceConnect is built on a diverse technology stack:
 
-1. **Computer Vision:** We used OpenCV and the Dlib C++ Library for facial biometric encoding and recognition.
+1. **Computer Vision:** I used OpenCV and the Dlib C++ Library for facial biometric encoding and recognition.
 
 2. **Vector Embeddings:** ChromaDB and Llama Index were used to create vector embeddings of sponsor documentation.
 
-3. **Document Retrieval:** We utilized Langchain to implement document retrieval from VectorDBs.
+3. **Document Retrieval:** I utilized Langchain to implement document retrieval from VectorDBs.
 
 4. **Language Model:** OpenAI was employed to process user queries.
 
@@ -28,9 +28,9 @@ FaceConnect is built on a diverse technology stack:
 
 6. **Discord Integration:** The bot was built using the discord.py library to integrate the user flow into Discord.
 
-7. **Blockchain Technologies:** We integrated Hedera to build a decentralized landing page and user authentication. We also interacted with Flow to facilitate seamless transactions.
+7. **Blockchain Technologies:** I integrated Hedera to build a decentralized landing page and user authentication. I also interacted with Flow to facilitate seamless transactions.
 
-## Challenges we ran into
+## Challenges I ran into
 
 Building FaceConnect presented several challenges:
 
@@ -40,9 +40,9 @@ Building FaceConnect presented several challenges:
 
 - **Biometric Encoding:** Implementing facial biometric encoding and recognition, although cool, required finding the right tools to convert a face to a biometric hash and then compare these hashes accurately.
 
-## Accomplishments that we're proud of
+## Accomplishments that I're proud of
 
-We're proud of several accomplishments:
+I're proud of several accomplishments:
 
 - **Facial Recognition:** Successfully implementing facial recognition technology, allowing users to connect based on photos.
 
@@ -54,11 +54,11 @@ We're proud of several accomplishments:
 
 - **Real-World Application:** Developing a solution that addresses a common real-world problem - staying in touch with people.
 
-## What we learned
+## What I learned
 
-Throughout this hackathon, we learned a great deal:
+Throughout this hackathon, I learned a great deal:
 
-- **Technology Stacks:** We gained experience with a wide range of technologies, including computer vision, blockchain, and biometric encoding.
+- **Technology Stacks:** I gained experience with a wide range of technologies, including computer vision, blockchain, and biometric encoding.
 
 - **Solo Coding:** The experience of solo coding, while initially challenging, allowed for greater freedom and experimentation.
 
