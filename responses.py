@@ -634,7 +634,7 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
                 if (recipient.isnumeric() and len(recipient) == 10):
                     twiliomessage = client.messages \
                     .create(
-                        body=f"Hi there, {discordAuthor} wants to reach out to you! \n Their Discord username is {discordAuthor}. \n Their message for you is: {str(message_string)}",
+                        body=f"Hi, FaceConnect here - {discordAuthor} wants to reach out to you! \n\n Their Discord username is {discordAuthor}. \n\n Their message for you is: {str(message_string)}",
                         from_='+12295750071',
                         to=f'+1{recipient}'
                     )
