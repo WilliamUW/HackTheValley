@@ -512,7 +512,7 @@ def get_response(message_string: str, message: any, is_private: any) -> str:
 
     p_message = message_string.lower()
 
-    if "hello" in p_message or "hi" in p_message:
+    if p_message == "hi" or p_message == "hello":
         return welcome_message
 
     if p_message == "!help":
@@ -632,6 +632,7 @@ With the following encoding: {str(unknown_face_encoding)[:200]}... [2727 more ch
                 print("No True element found in the list.")
 
             connectFlow = False
+            hederaFlow = False
             return "Sorry, no match found :("
 
         else:
