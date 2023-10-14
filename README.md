@@ -12,6 +12,17 @@ FaceConnect is a Discord bot designed to help you reconnect with people using fa
 
 Additionally, FaceConnect also includes a transaction feature that allows users to send transactions based on facial recognition. If you owe your friend money and have their face in your database, you can simply use the "transaction" command to complete the payment.
 
+## Demos
+
+Mobile Registration and Connection Flow:
+
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/eb8501ad-1c4c-4795-a1a4-91ff7385d281
+
+
+Desktop Flow:
+
+
 ## How I built it
 
 FaceConnect is built on a diverse technology stack:
