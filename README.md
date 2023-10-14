@@ -1,6 +1,6 @@
 # FaceConnect
 
-### Never lose a connection again! Connect with anyone, any wallet, and send transactions through an image of one's face!
+##### Never lose a connection again! Connect with anyone, any wallet, and send transactions through an image of one's face!
 
 ## Inspiration
 
