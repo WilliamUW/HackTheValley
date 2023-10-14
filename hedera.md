@@ -8,3 +8,9 @@ In the future, to pay someone or a vendor in Hedera, you can just scan their fac
 
 I also built a custom LLM trained on Hedera documentation to assist me in learning about Hedera and building on Hedera as a beginner!
 
+Hedera Account Registration, Information Fetch, and Transaction Send:
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/f8d4e46f-0225-417e-ab39-5cafb8db7e0b
+
+Hedera LLM:
+
