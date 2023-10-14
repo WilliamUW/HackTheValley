@@ -23,6 +23,10 @@ https://github.com/WilliamUW/HackTheValley/assets/25058545/eb8501ad-1c4c-4795-a1
 Desktop Connection Flow (Obama + Trump + Me as examples):
 
 
+https://github.com/WilliamUW/HackTheValley/assets/25058545/5e8f7c74-dd3a-4742-a5a3-e309cfd9d2e8
+
+
+
 ## How I built it
 
 FaceConnect is built on a diverse technology stack:
