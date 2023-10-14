@@ -19,6 +19,7 @@ registerFlow = False
 connectFlow = False
 hederaFlow = False
 flowFlow = False
+hederaTransactionFlow = False
 
 import requests
 
@@ -491,6 +492,7 @@ Type "Connect" to connect with anyone with an image of their face!
 
 Type "Hedera" to register your hedera account!
 Type "Hedera Account: to view your account info with just face!
+Type "Hedera Transaction: to send HBAR to anyone with just face!
 """
 
 
@@ -521,6 +523,7 @@ def get_response(message_string: str, message: any, is_private: any) -> str:
     global registerFlow
     global connectFlow
     global hederaFlow
+    global hederaTransactionFlow
 
     p_message = message_string.lower()
 
@@ -603,12 +606,11 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
         print(username_to_encoding)
         return f"Let's get you connected! Please upload an image of the person you want to contact. \n\n In the same message, please write the message you want to send to them!"
 
-    if p_message == "transaction" or p_message == "hedera":
-        hederaFlow = True
-        print(username_to_encoding)
+    if p_message == "hedera transaction":
+        hederaTransactionFlow = True
         return f"Please upload an image of the person you want to send a transaction to!"
 
-    if connectFlow or hederaFlow or p_message == "":
+    if connectFlow or hederaFlow or hederaTransactionFlow or p_message == "":
         print(message)
 
         if message.attachments:
@@ -642,6 +644,19 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
                 if (hederaFlow):
                     hederaFlow = False
                     return str(getHederaAccountInfo(recipient))[0:1000]
+                
+                if (hederaTransactionFlow):
+                    hederaTransactionFlow = False
+                    return f"""Face Recognition Successful! 
+
+Sending 1 HBAR To {recipient}
+                
+Image: {image_url} 
+
+Hedera Transaction Recipient: {recipient} (This can be hidden based on user privacy preferences)
+
+With the following encoding: {str(unknown_face_encoding)[:200]}... [2727 more characters]
+"""
 
                 discordAuthor = str(message.author)
 
