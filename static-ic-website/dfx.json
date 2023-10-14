@@ -1,8 +1,21 @@
 {
     "canisters": {
-        "website": {
-            "type": "assets",
-            "source": ["assets"]
-        }
-    }
- }
+      "website": {
+        "frontend": {
+          "entrypoint": "assets/index.html"
+        },
+        "source": [
+            "src/hello_assets/assets",
+            "dist/hello_assets/"
+          ],
+        "type": "assets"
+      }
+    },
+    "defaults": {
+      "build": {
+        "args": "",
+        "packtool": ""
+      }
+    },
+    "version": 1
+  }
