@@ -29,8 +29,8 @@ def getHederaAccountInfo(account_id_or_alias):
         pretty_json = json.dumps(account_info, indent=2)
 
         print(pretty_json)
-        
-        # You can access more information as needed from the account_info dictionary
+
+        return pretty_json
     else:
         print(f"Failed to retrieve account information. Status Code: {response.status_code}")
         print(response.text)  # Print the error message if available

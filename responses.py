@@ -9,6 +9,8 @@ import requests
 from PIL import Image
 import numpy as np
 
+from hedera import getHederaAccountInfo
+
 step = 0
 name = "Name"
 description = "Description"
@@ -303,7 +305,10 @@ username_to_encoding = {
         0.0852315,
         0.00671965,
     ],
-    "William Wang": [
+   
+}
+
+william_encoding = [
         -0.08489514,
         0.16629207,
         -0.00341852,
@@ -432,8 +437,7 @@ username_to_encoding = {
         -0.04186418,
         0.09741175,
         -0.00806305,
-    ],
-}
+    ]
 
 url = "https://api.verbwire.com/v1/nft/mint/quickMintFromMetadata"
 
@@ -484,6 +488,9 @@ welcome_message = """Hi - welcome to FaceConnect! How can I help?
         
 Type "Register" to get started!
 Type "Connect" to connect with anyone with an image of their face!
+
+Type "Hedera" to register your hedera account!
+Type "Hedera Account: to view your account info with just face!
 """
 
 
@@ -537,6 +544,12 @@ E.g. "4168807375"
         return """Let's connect your face to Hedera! Please upload an image of yourself.
         
 Please type your preferred Hedera address in the same message you attach your image."""
+
+    if p_message == "hedera account":
+        hederaFlow = True
+        return """Forgot your account ID? Let's connect your face to Hedera to easily view your account information! Please upload an image of yourself.
+        
+"""
 
     if registerFlow:
         print(message)
@@ -625,6 +638,10 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
 
                 print("Name: ", recipient)
                 print("The index of the first True element is:", index)
+
+                if (hederaFlow):
+                    hederaFlow = False
+                    return str(getHederaAccountInfo(recipient))[0:1000]
 
                 discordAuthor = str(message.author)
 
