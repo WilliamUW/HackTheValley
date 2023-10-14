@@ -19,6 +19,7 @@ registerFlow = False
 connectFlow = False
 hederaFlow = False
 flowFlow = False
+flowTransactionFlow = False
 hederaTransactionFlow = False
 
 import requests
@@ -440,8 +441,6 @@ william_encoding = [
         -0.00806305,
     ]
 
-url = "https://api.verbwire.com/v1/nft/mint/quickMintFromMetadata"
-
 import openai
 
 
@@ -466,33 +465,19 @@ def generate_text(prompt):
     return generated_text
 
 
-def minting(name, description, image_url, chain) -> str:
-    print("Minting NFT")
-
-    address = "0x0E5d299236647563649526cfa25c39d6848101f5"
-
-    payload = f'-----011000010111000001101001\r\nContent-Disposition: form-data; name="chain"\r\n\r\n{chain}\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name="imageUrl"\r\n\r\n{image_url}\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name="name"\r\n\r\n{name}\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name="description"\r\n\r\n{description}\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name="recipientAddress"\r\n\r\n{address}\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name="data"\r\n\r\ndata1\r\n-----011000010111000001101001--\r\n\r\n'
-    headers = {
-        "accept": "application/json",
-        "content-type": "multipart/form-data; boundary=---011000010111000001101001",
-        "X-API-Key": "sk_live_6c1b9c9b-6b4e-43de-a5d8-ebb8a4f85a8c",
-    }
-
-    response = requests.post(url, data=payload, headers=headers)
-
-    print(response.text)
-    print("Done Minting")
-    return response
-
 
 welcome_message = """Hi - welcome to FaceConnect! How can I help?
         
 Type "Register" to get started!
 Type "Connect" to connect with anyone with an image of their face!
 
+Type "Flow" to register your Flow account!
+Type "Flow Account: to view your account info with just your face!
+Type "Flow Transaction: to send FLOW to anyone with just their face!
+
 Type "Hedera" to register your hedera account!
-Type "Hedera Account: to view your account info with just face!
-Type "Hedera Transaction: to send HBAR to anyone with just face!
+Type "Hedera Account: to view your account info with just your face!
+Type "Hedera Transaction: to send HBAR to anyone with just their face!
 """
 
 
@@ -524,6 +509,8 @@ def get_response(message_string: str, message: any, is_private: any) -> str:
     global connectFlow
     global hederaFlow
     global hederaTransactionFlow
+    global flowFlow
+    global flowTransactionFlow
 
     p_message = message_string.lower()
 
@@ -553,6 +540,20 @@ Please type your preferred Hedera address in the same message you attach your im
         return """Forgot your account ID? Let's connect your face to Hedera to easily view your account information! Please upload an image of yourself.
         
 """
+    if p_message == "hedera transaction":
+        hederaTransactionFlow = True
+        return f"Please upload an image of the person you want to send a transaction to!"
+
+    if p_message == "flow":
+        registerFlow = True
+        return """Let's connect your face to FLOW! Please upload an image of yourself.
+        
+Please type your preferred Flow address in the same message you attach your image."""
+
+    if p_message == "flow transaction":
+        flowTransactionFlow = True
+        return f"Please upload an image of the person you want to send a transaction to!"
+
 
     if registerFlow:
         print(message)
@@ -606,9 +607,6 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
         print(username_to_encoding)
         return f"Let's get you connected! Please upload an image of the person you want to contact. \n\n In the same message, please write the message you want to send to them!"
 
-    if p_message == "hedera transaction":
-        hederaTransactionFlow = True
-        return f"Please upload an image of the person you want to send a transaction to!"
 
     if connectFlow or hederaFlow or hederaTransactionFlow or p_message == "":
         print(message)
@@ -654,6 +652,18 @@ Sending 1 HBAR To {recipient}
 Image: {image_url} 
 
 Hedera Transaction Recipient: {recipient} (This can be hidden based on user privacy preferences)
+
+With the following encoding: {str(unknown_face_encoding)[:200]}... [2727 more characters]
+"""
+                if (flowTransactionFlow):
+                    flowTransactionFlow = False
+                    return f"""Face Recognition Successful! 
+
+Sending 1 FLOW To {recipient}
+                
+Image: {image_url} 
+
+FLOW Transaction Recipient: {recipient} (This can be hidden based on user privacy preferences)
 
 With the following encoding: {str(unknown_face_encoding)[:200]}... [2727 more characters]
 """
