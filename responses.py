@@ -529,7 +529,8 @@ def get_response(message_string: str, message: any, is_private: any) -> str:
         
 If you wish, you can type your preferred phone number in the same message that you attach your image. 
 
-If not, your Discord username will be set as your alias."""
+E.g. "4168807375" 
+"""
 
     if p_message == "hedera":
         registerFlow = True
@@ -625,24 +626,28 @@ With the following encoding: {str(face_encoding)[:200]}... [2681 more characters
                 print("Name: ", recipient)
                 print("The index of the first True element is:", index)
 
+                discordAuthor = str(message.author)
+
                 if (recipient == "William Wang"):
                     recipient = "4168807375"
 
-                if (recipient[0] == '4'):
-                    message = client.messages \
+                if (recipient.isnumeric() and len(recipient) == 10):
+                    twiliomessage = client.messages \
                     .create(
-                        body=f"Hi there, {message.author} wants to reach out to you! \n Their Discord username is {message.author}. \n Their message for you is: {message_string}",
+                        body=f"Hi there, {discordAuthor} wants to reach out to you! \n Their Discord username is {discordAuthor}. \n Their message for you is: {str(message_string)}",
                         from_='+12295750071',
                         to=f'+1{recipient}'
                     )
 
-                    print(message.sid)
+                    print(twiliomessage.sid)
 
                 return f"""Face Recognition Successful! 
                 
 Image: {image_url} 
 
 Request Recipient: {recipient} (This can be hidden based on user privacy preferences)
+
+Reach Out Message: {str(message_string)}
 
 With the following encoding: {str(unknown_face_encoding)[:200]}... [2727 more characters]
 """
