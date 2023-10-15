@@ -16,6 +16,8 @@ That's why I created FaceConnect, a Discord bot that rekindles these connections
 
 But that's not all. FaceConnect also allows you to view account information and send transactions if you have a friend's face. If you owe your friend money, you can simply use the "transaction" command to complete the payment.
 
+Or even if you find someone's wallet or driver's license, you can send a reach out to them just with their ID photo!
+
 Imagine a world where you never lose contact with your favorite people again.
 
 Join me in a future where no connections are lost. Welcome to FaceConnect!
