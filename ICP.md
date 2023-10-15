@@ -13,3 +13,7 @@ ICP Deployment and User Authentication:
 https://github.com/WilliamUW/HackTheValley/assets/25058545/2f6dfaf0-9bdd-4cda-a47c-7756cad41ae6
 
 ICP LLM:
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/1416b7b0-e33a-415b-9e42-085f43700f00
+
+
