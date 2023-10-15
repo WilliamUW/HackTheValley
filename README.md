@@ -4,7 +4,7 @@
 
 ## Inspiration
 
-Have you ever met someone and instantly connected with them, only to realize you forgot to exchange contact information? Or, even worse, you have someone's contact but can't remember who they are later on? I certainly have.
+Have you ever met someone and instantly connected with them, only to realize you forgot to exchange contact information? Or, even worse, you have someone's contact but they are outdated and you have no way of contacting them? I certainly have.
 
 Last past week, I was scrolling through old photos and stumbled upon one from a Grade 5 Summer Camp. It was my first camp experience, and I had an incredible time with a friend. But there was a catch – I never got their contact, and I'd completely forgotten their name. All I had was a photo, and it felt like I'd lost a precious connection forever.
 
