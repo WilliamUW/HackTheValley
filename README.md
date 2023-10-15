@@ -6,7 +6,7 @@
 
 Have you ever met someone and instantly connected with them, only to realize you forgot to exchange contact information? Or, even worse, you have someone's contact but they are outdated and you have no way of contacting them? I certainly have.
 
-This past week, I was scrolling through old photos and stumbled upon one from a Grade 5 Summer Camp. It was my first camp experience, and I had an incredible time with a friend. But there was a catch – I never got their contact, and I'd completely forgotten their name. All I had was a photo, and it felt like I'd lost a precious connection forever.
+This past week, I was going through some old photos and stumbled upon one from a Grade 5 Summer Camp. It was my first summer camp experience, I was super nervous going in but I had an incredible time with a friend I met there. But there was a catch – I never got their contact, and I'd completely forgotten their name since it's been so long. All I had was a physical photo of us laughing together, and it felt like I'd lost a precious connection forever.
 
 This dilemma got me thinking. The problem of losing touch with people we've shared fantastic moments with is all too common, whether it's at a hackathon, a party, a networking event, or a summer camp. So, I set out to tackle this issue at Hack The Valley.
 
