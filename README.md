@@ -4,7 +4,7 @@
 
 ## Inspiration
 
-Have you ever met someone and instantly connected with them, only to realize you forgot to exchange contact information? Or, even worse, you have someone's contact but they are outdated and you have no way of contacting them? I certainly have.
+Have you ever found yourself in a situation where you really wanted to reconnect with someone, but all you had was a photo and no contact information? Whether this is from a yearbook, a lost wallet, old photos, or even videos of workshops at Hack the Valley. I certainly have.
 
 This past week, I was going through some old photos and stumbled upon one from a Grade 5 Summer Camp. It was my first summer camp experience, I was super nervous going in but I had an incredible time with a friend I met there. We did everything together and it was one of my favorite memories from childhood. But there was a catch – I never got their contact, and I'd completely forgotten their name since it's been so long. All I had was a physical photo of us laughing together, and it felt like I'd lost a precious connection forever.
 
