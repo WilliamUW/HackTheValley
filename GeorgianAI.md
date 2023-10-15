@@ -4,7 +4,6 @@ I was inspired by the data sources listed in the document by scraping LinkedIn p
 
 I also built a custom LLM trained on Georgian documentation to learn more about the firm!
 
+https://github.com/WilliamUW/HackTheValley/assets/25058545/5643ef49-23c9-4a4c-a902-038635aba7fb
 
-
-https://github.com/WilliamUW/HackTheValley/assets/25058545/81ac7f53-7655-46b1-a2d5-3d5220040a6d
 
