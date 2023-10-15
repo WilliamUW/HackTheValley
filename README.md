@@ -57,19 +57,15 @@ Building FaceConnect presented several challenges:
 
 - **New Technologies:** Working with technologies like ICP, Flow, and Hedera for the first time required a significant learning curve. However, this provided an opportunity to develop custom Language Models (LLMs) trained on sponsor documentation to facilitate the learning process.
 
-- **Biometric Encoding:** Implementing facial biometric encoding and recognition, although cool, required finding the right tools to convert a face to a biometric hash and then compare these hashes accurately.
+- **Biometric Encoding:** It was my first time implementing facial biometric encoding and recognition! Although cool, it required some time to find the right tools to convert a face to a biometric hash and then compare these hashes accurately.
 
-## Accomplishments that I're proud of
+## Accomplishments that I'm proud of
 
 I're proud of several accomplishments:
 
 - **Facial Recognition:** Successfully implementing facial recognition technology, allowing users to connect based on photos.
 
-- **Blockchain Integration:** Integrating Hedera and Flow to enable seamless transactions based on facial recognition.
-
 - **Custom LLMs:** Building custom Language Models trained on sponsor documentation, which significantly aided the learning process for new technologies.
-
-- **Inclusivity:** Aligning the project with the Diversity theme, promoting inclusivity and connection across barriers such as language and disabilities.
 
 - **Real-World Application:** Developing a solution that addresses a common real-world problem - staying in touch with people.
 
@@ -81,7 +77,7 @@ Throughout this hackathon, I learned a great deal:
 
 - **Solo Coding:** The experience of solo coding, while initially challenging, allowed for greater freedom and experimentation.
 
-- **Documentation:** Building custom LLMs for various technologies, based on sponsor documentation, proved invaluable for rapid learning.
+- **Documentation:** Building custom LLMs for various technologies, based on sponsor documentation, proved invaluable for rapid learning!
 
 ## What's next for FaceConnect
 
@@ -91,4 +87,4 @@ The future of FaceConnect looks promising:
 
 - **Improved Transactions:** Expanding the transaction feature to enable users to pay or transfer funds to multiple people at once.
 
-- **Additional Technologies:** Exploring and integrating new technologies to enhance the platform's capabilities and reach.
+- **Additional Technologies:** Exploring and integrating new technologies to enhance the platform's capabilities and reach beyond Discord!
