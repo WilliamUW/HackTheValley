@@ -6,11 +6,17 @@ I also built a custom LLM trained on Flow documentation to assist me in learning
 
 Flow Transaction Demo:
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/1be7cbf7-26b8-42ce-8905-a52cfa80bfc8
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/420e0f0d-df5d-4e44-a95a-5703182ab360
+
+
 
 Flow LLM:
 
 
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/1662c3cb-b57b-4667-aa5d-1fe3be8d21db
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/ba950cbb-36ae-4761-ba20-dc80397e676a
+
+
 
