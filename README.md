@@ -142,7 +142,7 @@ With FaceConnect, to pay someone or a vendor in Flow, you can just scan their fa
 
 I also built a custom LLM trained on Flow documentation to assist me in learning about Flow and building on Flow as a beginner!
 
-Link: https://github.com/WilliamUW/HackTheValley/readme/main/flow.md
+Link: https://github.com/WilliamUW/HackTheValley/blob/readme/flow.md
 
 Georgian AI Challenge Prize
 
