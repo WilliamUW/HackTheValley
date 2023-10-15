@@ -10,11 +10,17 @@ I also built a custom LLM trained on Hedera documentation to assist me in learni
 
 Hedera Account Registration, Information Fetch, and Transaction Send:
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/f8d4e46f-0225-417e-ab39-5cafb8db7e0b
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/92dd8b51-c240-4c9d-b406-0f356f6f0c73
+
+
 
 Hedera LLM:
 
 
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/3ab4d53b-07d7-4367-836a-e6760bd8db73
+https://github.com/WilliamUW/HackTheValley/assets/25058545/da9cdc7f-00d7-4e2c-9c99-40d68ee8ce65
+
+
+
 
