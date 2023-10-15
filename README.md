@@ -27,13 +27,15 @@ Join me in a future where no connections are lost. Welcome to FaceConnect!
 Mobile Registration and Connection Flow (Registering and Detecting my own face!):
 
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/eb8501ad-1c4c-4795-a1a4-91ff7385d281
+
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/d6fc22ae-b257-4810-a209-12e368128268
+
 
 
 Desktop Connection Flow (Obama + Trump + Me as examples):
 
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/5e8f7c74-dd3a-4742-a5a3-e309cfd9d2e8
 
 
 
