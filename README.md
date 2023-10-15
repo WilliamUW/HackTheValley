@@ -12,11 +12,11 @@ This dilemma got me thinking. The problem of losing touch with people we've shar
 
 ## What it does
 
-That's why I created FaceConnect, a Discord bot that rekindles these connections using facial recognition. With FaceConnect, you can send connection requests to people as long as you have a picture of their face. 
+That's why I created FaceConnect, a Discord bot that allows you to send connection requests to people as long as you have a picture of their face.
 
 But that's not all. FaceConnect also allows you to view account information and send transactions if you have a friend's face. If you owe your friend money, you can simply use the "transaction" command to complete the payment.
 
-Or even if you find someone's wallet or driver's license, you can send a reach out to them just with their ID photo!
+Or even if you find someone's wallet or driver's license, you can send a reach out message to them just with their ID photo!
 
 Imagine a world where you never lose contact with your favorite people again.
 
