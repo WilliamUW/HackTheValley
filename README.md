@@ -4,17 +4,21 @@
 
 ## Inspiration
 
-Have you ever met someone and felt an instant connection, only to realize you never exchanged contact information? Or perhaps you've faced the frustration of having someone's contact but struggling to remember who they are later on. Now, imagine a solution that helps you bridge these gaps using the power of facial recognition. FaceConnect was inspired by the question: "What if you could reconnect with those you've met simply by sharing a photo?"
+Have you ever met someone and instantly connected with them, only to realize you forgot to exchange contact information? Or, even worse, you have someone's contact but can't remember who they are later on? I certainly have.
 
-This common scenario, whether at a hackathon, a social event, or even a casual get-together, often leaves us longing to stay in touch with the amazing people we've crossed paths with. The inspiration for FaceConnect also came from a personal experience when I attended a summer camp and forged a remarkable bond with a friend. However, I never got their contact information and only have a photo as a memory. The desire to reconnect with that friend was a driving force behind the creation of FaceConnect.
+Last past week, I was scrolling through old photos and stumbled upon one from a Grade 5 Summer Camp. It was my first camp experience, and I had an incredible time with a friend. But there was a catch – I never got their contact, and I'd completely forgotten their name. All I had was a photo, and it felt like I'd lost a precious connection forever.
 
-FaceConnect seeks to answer the question by enabling connections through the simplicity of a photograph, ensuring that you never lose contact with those you've shared incredible moments with.
+This dilemma got me thinking. The problem of losing touch with people we've shared fantastic moments with is all too common, whether it's at a hackathon, a party, a networking event, or a summer camp. So, I set out to tackle this issue at Hack The Valley.
 
 ## What it does
 
-FaceConnect is a Discord bot designed to help you reconnect with people using facial recognition. It allows users to upload a selfie, and the bot generates a unique facial encoding. Users can then upload a photo of someone they want to connect with, and the bot matches it to the encoding. Once a match is found, users can send a message to initiate contact.
+That's why I created FaceConnect, a Discord bot that rekindles these connections using facial recognition. With FaceConnect, you can stay in touch with people as long as you have a picture of their face. But that's not all. FaceConnect also allows you to view account information and send transactions if you have a friend's face in your database.
 
-Additionally, FaceConnect also includes a transaction feature that allows users to send transactions based on facial recognition. If you owe your friend money and have their face in your database, you can simply use the "transaction" command to complete the payment.
+If you owe your friend money and have their face in your database, you can simply use the "transaction" command to complete the payment.
+
+Imagine a world where you never lose contact with your favorite people again.
+
+Join me in a future where no connections are lost. Welcome to FaceConnect!
 
 ## Demos
 
