@@ -10,10 +10,16 @@ Canister ID: be2us-64aaa-aaaaa-qaabq-cai
 
 ICP Deployment and User Authentication:
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/2f6dfaf0-9bdd-4cda-a47c-7756cad41ae6
+
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/c4ca7c21-7bfe-4fa2-90f3-93573d055972
+
 
 ICP LLM:
 
-https://github.com/WilliamUW/HackTheValley/assets/25058545/1416b7b0-e33a-415b-9e42-085f43700f00
+
+
+https://github.com/WilliamUW/HackTheValley/assets/25058545/a8a1fdf6-0b1f-42a7-a05c-a714a1dc4f86
+
 
 
